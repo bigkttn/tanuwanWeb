@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
+@theme {
+  --color-electric-yellow: #ffd21f;
+  --color-cyan-glow: #22d3ee;
+  --color-red-rec: #ff3b3b;
+  --color-dark-bg: #0b1220;
+  --color-dark-card: rgba(255, 255, 255, 0.05);
+  
+  --font-anuphan: var(--font-anuphan), sans-serif;
+  --font-ibm: var(--font-ibm-plex-sans-thai), sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #05070d;
+  --foreground: #e8ecf4;
+  --muted: #9aa6bd;
+  --accent: #ffd21f;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-ibm);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-anuphan);
+}
+
+.glass-card {
+  background: var(--color-dark-card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #ffffff, #9aa6bd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  @apply bg-[#ffd21f] text-black font-bold px-6 py-3 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_15px_rgba(255,210,31,0.5)];
+}
+
+.btn-outline {
+  @apply border border-[#ffd21f] text-[#ffd21f] font-bold px-6 py-3 rounded-full transition-all hover:bg-[rgba(255,210,31,0.1)];
 }
