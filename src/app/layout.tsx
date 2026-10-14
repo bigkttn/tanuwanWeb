@@ -10,7 +10,7 @@ const anuphan = Anuphan({
 });
 
 const ibmPlex = IBM_Plex_Sans_Thai({
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["thai", "latin"],
   variable: "--font-ibm-plex-sans-thai",
 });

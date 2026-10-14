@@ -25,7 +25,7 @@ export default function Hero() {
           </ul>
 
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href={`tel:${siteData.phoneRaw}`} className="btn-primary w-full sm:w-auto text-lg min-h-14">
+            <a id="hero-call" href={`tel:${siteData.phoneRaw}`} className="btn-primary w-full sm:w-auto text-lg min-h-14">
               <Phone size={22} /> โทร {siteData.phone}
             </a>
             {siteData.lineUrl && (
@@ -39,7 +39,10 @@ export default function Hero() {
         <img
           src="/images/work/ev-aion-2.jpg"
           alt="ผลงานติดตั้งเครื่องชาร์จ EV โดยช่างกิตติพงษ์"
-          className="rounded-2xl object-cover aspect-[3/4] w-full max-w-md mx-auto lg:mr-0 shadow-md"
+          width={1108}
+          height={1477}
+          fetchPriority="high"
+          className="rounded-2xl object-cover object-[center_60%] aspect-[4/3] lg:aspect-[3/4] w-full max-w-md mx-auto lg:mr-0 shadow-md"
         />
       </div>
     </section>

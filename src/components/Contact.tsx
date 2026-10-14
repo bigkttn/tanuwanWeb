@@ -11,7 +11,7 @@ export default function Contact() {
         <a href={`tel:${siteData.phoneRaw}`} className="card block p-6 hover:shadow-md transition-shadow">
           <Phone className="mx-auto text-brand-dark mb-2" size={32} />
           <div className="text-3xl font-bold">{siteData.phone}</div>
-          <div className="text-muted mt-1">แตะเพื่อโทร</div>
+          <div className="text-muted mt-1">กดเพื่อโทร</div>
         </a>
 
         {(siteData.lineUrl || siteData.facebookUrl) && (

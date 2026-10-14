@@ -25,14 +25,6 @@ export default function Navbar() {
             <Phone size={18} /> {siteData.phone}
           </a>
         </div>
-
-        <a
-          href={`tel:${siteData.phoneRaw}`}
-          aria-label="โทร"
-          className="md:hidden w-11 h-11 rounded-full bg-brand flex items-center justify-center"
-        >
-          <Phone size={20} />
-        </a>
       </div>
     </nav>
   );
