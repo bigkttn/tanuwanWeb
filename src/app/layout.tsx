@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Anuphan, IBM_Plex_Sans_Thai } from "next/font/google";
 import "./globals.css";
 import { siteData } from "../data/site";
@@ -15,8 +15,15 @@ const ibmPlex = IBM_Plex_Sans_Thai({
 });
 
 export const metadata: Metadata = {
-  title: `${siteData.name} | ${siteData.tagline}`,
+  title: `${siteData.name} | ช่างไฟฟ้า กล้องวงจรปิด ติดตั้ง EV Charger`,
   description: siteData.tagline,
+  openGraph: {
+    images: ["/images/work/ev-aion-2.jpg"],
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({

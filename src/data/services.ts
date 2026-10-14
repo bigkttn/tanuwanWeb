@@ -1,38 +1,8 @@
 export const servicesData = [
-  {
-    id: "electrical-wiring",
-    title: "เดินสายไฟใหม่/ซ่อมแซม",
-    description: "เดินสายไฟร้อยท่อ หรือเดินลอย พร้อมจัดเก็บสายอย่างเป็นระเบียบ",
-    icon: "plug"
-  },
-  {
-    id: "troubleshooting",
-    title: "แก้ปัญหาไฟตก/ไฟรั่ว",
-    description: "ตรวจเช็คหาจุดไฟรั่ว ไฟตก เบรกเกอร์ตัดบ่อย ด้วยเครื่องมือมาตรฐาน",
-    icon: "zap"
-  },
-  {
-    id: "consumer-unit",
-    title: "ติดตั้ง/เปลี่ยนตู้เบรกเกอร์",
-    description: "เปลี่ยนตู้ Consumer Unit จัดสายไฟใหม่เพื่อความปลอดภัย",
-    icon: "shield"
-  },
-  {
-    id: "ev-charger",
-    title: "ติดตั้ง EV Charger",
-    description: "เดินสายไฟใหม่สำหรับชาร์จรถยนต์ไฟฟ้าโดยเฉพาะ ปลอดภัยตามมาตรฐาน",
-    icon: "car"
-  },
-  {
-    id: "cctv-install",
-    title: "ติดตั้งกล้องวงจรปิด",
-    description: "ติดตั้งกล้องวงจรปิด IP/Analog ดูผ่านมือถือ ภาพคมชัด",
-    icon: "camera"
-  },
-  {
-    id: "cctv-maintenance",
-    title: "ซ่อมบำรุงกล้องวงจรปิด",
-    description: "เช็คกล้องภาพดับ ย้ายมุมกล้อง เปลี่ยนฮาร์ดดิสก์",
-    icon: "wrench"
-  }
+  { id: "cctv", title: "กล้องวงจรปิด", description: "ขาย ซ่อม ติดตั้ง HIKVISION / Dahua ดูผ่านมือถือได้", icon: "camera" },
+  { id: "network", title: "ระบบเน็ตเวิร์ก / สาย LAN", description: "เดินสาย LAN ติดตั้งระบบ Network บ้าน ออฟฟิศ", icon: "network" },
+  { id: "pabx", title: "ตู้สาขาโทรศัพท์ PABX", description: "ขาย ซ่อม ติดตั้งตู้สาขาโทรศัพท์อัตโนมัติ", icon: "phone" },
+  { id: "digital-tv", title: "ทีวีดิจิตอล", description: "ติดตั้งระบบทีวีดิจิตอล บ้าน คอนโด โรงแรม", icon: "tv" },
+  { id: "electrical", title: "ระบบไฟฟ้า", description: "ขาย ติดตั้งระบบไฟฟ้า บ้าน คอนโด โรงแรม", icon: "zap" },
+  { id: "ev-charger", title: "ติดตั้งเครื่องชาร์จรถ EV", description: "เดินวงจรที่ 2 สำหรับ EV Charger พร้อมติดตั้งเครื่องชาร์จ", icon: "ev" },
 ];
