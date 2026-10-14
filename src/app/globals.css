@@ -42,6 +42,11 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   to { opacity: 1; }
 }
 
+@keyframes kenburns {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
 .card {
   @apply bg-white border border-line rounded-2xl shadow-sm;
 }
