@@ -17,7 +17,7 @@ export default function Services() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-3">บริการ</h2>
-          <p className="text-muted">ขาย ซ่อม ติดตั้ง ครบในช่างคนเดียว</p>
+          <p className="text-muted">ขาย ซ่อม ติดตั้ง ครบในช่างคนเดียว ย่านรามอินทรา บางเขน และใกล้เคียง</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

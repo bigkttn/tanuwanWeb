@@ -11,7 +11,10 @@ export default function Hero() {
             รับงานบ้าน • คอนโด • โรงแรม • ออฟฟิศ
           </span>
           <h1 className="text-4xl sm:text-5xl font-bold mb-3">{siteData.name}</h1>
-          <p className="text-lg text-muted mb-6">{siteData.role}</p>
+          <p className="text-lg text-muted mb-2">{siteData.role}</p>
+          <p className="text-muted mb-6">
+            📍 รับงานย่าน <strong className="text-ink">{siteData.areas.join(" • ")}</strong> และใกล้เคียง
+          </p>
 
           <ul className="flex flex-wrap gap-2 mb-8">
             {servicesData.map((s) => (
